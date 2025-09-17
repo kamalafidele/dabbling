@@ -1,0 +1,42 @@
+{
+    "Statement": [
+        {
+            "Sid": "AdminObject",
+            "Effect": "Allow",
+            "Action": "*",
+            "Principal": "*",
+            "Resource": "*"
+        }
+        ,
+        {
+            "Sid": "AdminContainer",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "*",
+            "Resource": [
+                "arn:aws:s3:::happierleadsstorage",
+                "arn:aws:s3:::happierleadsstorage/*"
+            ]
+        },
+        {
+            "Sid": "AdminContainer",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "*",
+            "Resource": [
+                "arn:aws:s3:::happierleadsstorage",
+                "arn:aws:s3:::happierleadsstorage/*"
+            ]
+        },
+        {
+            "Sid": "PublicRead",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "*",
+            "Resource": [
+                "arn:aws:s3:::happierleadsstorage",
+                "arn:aws:s3:::happierleadsstorage/*"
+            ]
+        }
+    ]
+}
